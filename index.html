@@ -70,7 +70,11 @@
           <h1 class="sectionh order-container">
             Effective Solutions for Your Business
           </h1>
-          <button class="btn-order order-container" type="button">
+          <button
+            class="btn-order order-container"
+            type="button"
+            data-modal-open
+          >
             Order Service
           </button>
         </div>
@@ -439,5 +443,15 @@
         </div>
       </div>
     </footer>
+    <div class="backfon is-hidden" data-modal>
+      <div class="modal">
+        <button class="btnmodal" type="button" data-modal-close>
+          <svg class="modal-close" width="8" height="8">
+            <use href="./images/icon.svg#icon-modal"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
